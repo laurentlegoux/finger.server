@@ -1,0 +1,23 @@
+{  
+  "name": "finger server",  
+  "publisher": "Laurent Legoux",  
+  "short_description": "Finger protocol server (port 79)",  
+  "long_description": "A fingerd that serves a custom script and files (plan...) and over TCP port 79.",  
+  "fullname": "finger.server",  
+  "version": "0.1.0",  
+  "category": "networking",  
+  "activities": [  
+    {  
+      "entrypoint": "finger_boot_service.py",  
+      "classname": "FingerSettings",  
+      "intent_filters": [{"action": "main", "category": "launcher"}]  
+    }  
+  ],  
+  "services": [  
+    {  
+      "entrypoint": "finger_boot_service.py",  
+      "classname": "FingerBootService",  
+      "intent_filters": [{"action": "boot_completed", "delay_s": 30}]  
+    }  
+  ]  
+}
