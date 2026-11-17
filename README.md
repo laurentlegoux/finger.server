@@ -1,4 +1,4 @@
-# fingerd — a Finger protocol server for MicroPythonOS  
+# finger server — a Finger protocol server for MicroPythonOS  
   
 Because your microcontroller deserves to be fingered. On port 79, like it's 1977.  
   
